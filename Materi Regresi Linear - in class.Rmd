@@ -106,7 +106,7 @@ ggcorr(crime, hjust = 1, label = T)
 
 1. Buat model linear untuk memprediksi inequality berdasarkan gdp
 ```{r}
-model_crime1 <- 
+model_crime1 <- lm(inequality ~ gdp, crime)
 ```
 
 Cek summary model_crime1
