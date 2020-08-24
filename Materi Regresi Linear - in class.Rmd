@@ -1,7 +1,7 @@
 ---
 title: "Materi Regresi Linear"
 author: "Lenny M. Wibisana"
-date: "21 Mei 2020"
+date: "24 Agustus 2020"
 output:
   html_document:
     df_print: paged
@@ -26,21 +26,21 @@ knitr::opts_chunk$set(echo = TRUE,
 ## Load library yang digunakan
 ```{r}
 rm(list = ls())
-library(dplyr)
-library(tidyverse)
-library(GGally)
-library(MASS)
-library(MLmetrics)
-library(lmtest)
-library(car)
-library(caret)
+library(dplyr)  #untuk merapikan data
+library(tidyverse)  #untuk merapikan data
+library(GGally) #untuk menampilkan korelasi keseluruhan antar variabel functin ggcor
+library(MASS) #package dimana isinya data-data yang dapat kita olah, salah satunya data crime
+library(MLmetrics) #untuk cek error model MSE MAPE
+library(lmtest) #untuk cek asumsi homoscedasticity
+library(car) #untuk cek asumsi multicollinearity
+library(caret) #untuk cek error model MAE RMS
 ```
 
 
 ## Read data
 ```{r}
 # read data csv crime, dan beri nama datasetnya `crime`
-crime <- read.csv("crime.csv")
+crime <- 
 ```
 
 
